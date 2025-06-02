@@ -1,0 +1,147 @@
+<!-- events.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Event - NeoEvent</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .event-section {
+      background: url('gambar/JKT48-Wonderland-scaled.webp') center center/cover no-repeat;
+      position: relative;
+      z-index: 1;
+    }
+
+    .event-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6); /* Overlay gelap */
+      z-index: 0;
+    }
+
+    .event-section .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">NeoEvent</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="events.html">Event</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Formulir Pendaftaran</a></li>
+          <li class="nav-item"><a class="nav-link" href="summary.html">Ringkasan Pendaftaran</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <!-- Event List -->
+  <section class="container-fluid py-5 event-section text-white">
+    <div class="container position-relative z-2">  
+      <h2 class="text-center fw-bold mb-4">Daftar Event</h2>
+      <div class="row g-4">
+        <!-- Event Cards -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="gambar/2s.jpg" class="card-img-top" alt="2Shoot">
+            <div class="card-body">
+              <h5 class="card-title">2Shoot with JKT48</h5>
+              <p class="card-text">Foto eksklusif secara offline dengan member JKT48.</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="gambar/chekica.jpg" class="card-img-top" alt="Sambil Menggandeng Erat Tanganku">
+            <div class="card-body">
+              <h5 class="card-title">2Shoot chekica</h5>
+              <p class="card-text">Foto eksklusif dengan member JKT48 melalui web chekica.</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="gambar/pajama-drive.jpg" class="card-img-top" alt="Pajama Drive">
+            <div class="card-body">
+              <h5 class="card-title">Show Theater "Pajama Drive"</h5>
+              <p class="card-text">Menonton show theater JKT48 dengan setlist "Pajama Drive".</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="gambar/ramune.jpg" class="card-img-top" alt="Cara Meminum Ramune">
+            <div class="card-body">
+              <h5 class="card-title">Show Theater "Cara Meminum Ramune"</h5>
+              <p class="card-text">Menonton show theater JKT48 dengan setlist "Cara Meminum Ramune".</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="gambar/aitakatta.jpg" class="card-img-top" alt="Ingin Bertemu">
+            <div class="card-body">
+              <h5 class="card-title">Show Theater "Ingin Bertemu"</h5>
+              <p class="card-text">Menonton show theater JKT48 dengan setlist "Ingin Bertemu".</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="gambar/twt.jpg" class="card-img-top" alt="Sambil Menggandeng Erat Tanganku">
+            <div class="card-body">
+              <h5 class="card-title">Show Theater "Sambil Menggandeng Erat Tanganku"</h5>
+              <p class="card-text">Menonton show theater JKT48 dengan setlist "Sambil Menggandeng Erat Tanganku".</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <!-- Modal Templates -->
+  <div class="modal card" id="modal1" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">2Shoot with JKT48</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Ikuti sesi foto eksklusif secara offline dengan member pilihan dari JKT48. Harga tiket: Rp 200.000.</p></div></div></div></div>
+  <div class="modal card" id="modal2" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Show Theater "Pajama Drive"</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Show teater JKT48 yang penuh semangat dengan setlist legendaris "Pajama Drive". Harga tiket: Rp 200.000.</p></div></div></div></div>
+  <div class="modal card" id="modal3" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Show Theater "Cara Meminum Ramune"</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Nikmati setlist "Cara Meminum Ramune" bersama performa panggung JKT48. Harga tiket: Rp 200.000.</p></div></div></div></div>
+  <div class="modal card" id="modal4" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Show Theater "Ingin Bertemu"</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Tonton pertunjukan teatrikal dengan setlist "Ingin Bertemu" dari JKT48. Harga tiket: Rp 200.000.</p></div></div></div></div>
+  <div class="modal card" id="modal5" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Show Theater "Sambil Menggandeng Erat Tanganku"</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Show teater penuh emosi dengan setlist "Sambil Menggandeng Erat Tanganku" oleh JKT48. Harga tiket: Rp 200.000.</p></div></div></div></div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <small>&copy; 2025 NeoEvent. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/event.js"></script>
+</body>
+</html>
