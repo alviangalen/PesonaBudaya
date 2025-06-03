@@ -35,6 +35,9 @@
       transform: translateY(-5px);
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     }
+    footer {
+      background-color: #212529; /* Warna bg-dark */
+    }
   </style>
 </head>
 <body>
@@ -58,87 +61,85 @@
     </div>
   </nav>
     
-  <!-- Event List -->
-  <section class="container-fluid py-5 event-section text-white">
-    <div class="container position-relative z-2">  
-      <h2 class="text-center fw-bold mb-4">Daftar Event</h2>
-      <div class="row g-4">
-        <!-- Event Cards -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="gambar/2s.jpg" class="card-img-top" alt="2Shoot">
-            <div class="card-body">
-              <h5 class="card-title">2Shoot with JKT48</h5>
-              <p class="card-text">Foto eksklusif secara offline dengan member JKT48.</p>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Lihat Detail</button>
-            </div>
+    <!-- Konten Gambar dan Teks -->
+    <main>
+      <section class="container">
+          <div class="row">
+              <div>
+                <h1>‎ </h1>
+                <h2 align="middle" class="fw-bold mb-3">Anjungan Kalimantan Barat</h2>
+              </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="gambar/chekica.jpg" class="card-img-top" alt="Sambil Menggandeng Erat Tanganku">
-            <div class="card-body">
-              <h5 class="card-title">2Shoot chekica</h5>
-              <p class="card-text">Foto eksklusif dengan member JKT48 melalui web chekica.</p>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">Lihat Detail</button>
-            </div>
+          
+      <section class="container">
+          <div class="row">
+              <div class="col-md-6">
+                <img src="gambar/rumah betang.jpg" alt="rumah betang" class="img-fluid rounded shadow">
+              </div>
+              <div class="col-md-6">
+                <p class="lead">Kami melanjutkan eksplorasi ke Anjungan Kalimantan Barat. Di sini, kami belajar banyak tentang keragaman budaya Kalbar yang kaya dan unik. Kalimantan barat sendiri punya tiga suku bangsa, yaitu Melayu, Tionghoa, dan Dayak. Salah satu hal yang menonjol adalah Rumah Panjang (Betang), rumah adat suku Dayak. Rumah ini dibangun tinggi untuk menghindari banjir, binatang buas, dan menjaga keamanan. Tangganya bisa diangkat saat malam untuk menghindari serangan musuh. Uniknya, rumah ini tidak menggunakan paku, melainkan diikat dengan rotan, dan menggunakan kayu besi yang sangat kuat dan tahan rayap. Karena dari kayu besi inilah, rumah ini tidak bisa di paku.</p>
+              </div>
+              <div>
+                <p></p>
+                <p class="lead">Rumah panjang dihuni banyak keluarga secara bersama-sama karena suku Dayak percaya bahwa hidup berkelompok lebih aman. Di sekitar rumah, terdapat “sando” dan “rumah balu”, tempat penyimpanan jenazah. Masyarakat Dayak juga memiliki benda-benda ritual, termasuk patung-patung untuk pemujaan, dan dalam kepercayaan lama, beberapa upacara menggunakan darah manusia sebagai sesajen.</p>
+              </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="gambar/pajama-drive.jpg" class="card-img-top" alt="Pajama Drive">
-            <div class="card-body">
-              <h5 class="card-title">Show Theater "Pajama Drive"</h5>
-              <p class="card-text">Menonton show theater JKT48 dengan setlist "Pajama Drive".</p>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Lihat Detail</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="gambar/ramune.jpg" class="card-img-top" alt="Cara Meminum Ramune">
-            <div class="card-body">
-              <h5 class="card-title">Show Theater "Cara Meminum Ramune"</h5>
-              <p class="card-text">Menonton show theater JKT48 dengan setlist "Cara Meminum Ramune".</p>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Lihat Detail</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="gambar/aitakatta.jpg" class="card-img-top" alt="Ingin Bertemu">
-            <div class="card-body">
-              <h5 class="card-title">Show Theater "Ingin Bertemu"</h5>
-              <p class="card-text">Menonton show theater JKT48 dengan setlist "Ingin Bertemu".</p>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">Lihat Detail</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="gambar/twt.jpg" class="card-img-top" alt="Sambil Menggandeng Erat Tanganku">
-            <div class="card-body">
-              <h5 class="card-title">Show Theater "Sambil Menggandeng Erat Tanganku"</h5>
-              <p class="card-text">Menonton show theater JKT48 dengan setlist "Sambil Menggandeng Erat Tanganku".</p>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">Lihat Detail</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>  
-  </section>
 
-  <!-- Modal Templates -->
-  <div class="modal card" id="modal1" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">2Shoot with JKT48</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Ikuti sesi foto eksklusif secara offline dengan member pilihan dari JKT48. Harga tiket: Rp 200.000.</p></div></div></div></div>
-  <div class="modal card" id="modal2" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Show Theater "Pajama Drive"</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Show teater JKT48 yang penuh semangat dengan setlist legendaris "Pajama Drive". Harga tiket: Rp 200.000.</p></div></div></div></div>
-  <div class="modal card" id="modal3" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Show Theater "Cara Meminum Ramune"</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Nikmati setlist "Cara Meminum Ramune" bersama performa panggung JKT48. Harga tiket: Rp 200.000.</p></div></div></div></div>
-  <div class="modal card" id="modal4" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Show Theater "Ingin Bertemu"</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Tonton pertunjukan teatrikal dengan setlist "Ingin Bertemu" dari JKT48. Harga tiket: Rp 200.000.</p></div></div></div></div>
-  <div class="modal card" id="modal5" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Show Theater "Sambil Menggandeng Erat Tanganku"</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Show teater penuh emosi dengan setlist "Sambil Menggandeng Erat Tanganku" oleh JKT48. Harga tiket: Rp 200.000.</p></div></div></div></div>
+      <section class="container ">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="gambar/sumpit.jpg" alt="sumpit" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+              <p class="lead">Mereka juga memiliki senjata dan olahraga tradisional seperti sumpit, yang digunakan untuk berburu atau bertahan. Cara menggunakan sumpit ini yaitu dengan memasukkan peluru ke dalam lubang sumpit, kemudian membidik ke arah target lalu meniupnya dengan kencang. Ini sangat melatih ketangkasan, kecepatan ketepatan dan ketahanan tangan dalam memegang sumpit itu sendiri. </p>
+            </div>
+
+      <section class="container ">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="gambar/baju adat.png" alt="Baju Adat Dayak" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+              <p class="lead">Dari sisi pakaian adat, laki-laki memakai pakaian adat King Baba, dan perempuan memakai King Bibinge, yang dibuat dari kulit kayu. Kulit kayu ini di pukul pukul hingga halus agar seratnya bisa digunakan untuk membuat pakaian. Suku Dayak umumnya tinggal di hulu sungai Kapuas, sungai terpanjang di Indonesia. </p>
+              <p class="lead">Ciri khas lainnya adalah bulu burung enggang yang sering digunakan dalam hiasan kepala. Burung enggang ini sekarang adalah hewan yang sudah hampir punah, maka dari itu sudah tidak boleh di buru lagi apalagi mengambil bulunya.</p>
+            </div>
+
+      <section class="container ">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="gambar/baju adat melayu.jpg" alt="Baju Adat Melayu" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+              <p class="lead">Selain Dayak, Kalimantan Barat juga memiliki suku Melayu dan Tionghoa. Suku Melayu tinggal di pesisir, memakai baju Telok Belanga (laki-laki) dan Baju Kuru (perempuan). </p>
+              <p class="lead">Motif kain tradisional Kalbar seperti corak insang dan motif gelombang menggambarkan identitas lokal. Motif ini tidak menampilkan makhluk hidup karena mengikuti ajaran Islam. Gelombang mewakili semangat kehidupan masyarakat Sungai Kapuas, sungai yang menjadi napas kota Pontianak.</p>
+              <p class="lead">Mereka memiliki makanan khas bernama Bubur Pedas, makanan istimewa yang konon biasa dimakan oleh sultan setiap hari Rabu. Bubur ini terdiri dari rempah-rempah mahal dan beraroma kuat.</p>
+              
+            </div>
+
+      <section class="container ">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="gambar/istana kadariah.jpg" alt="Istana Kadariah" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+              <p class="lead">Kami juga melihat Istana Kadariah, istana tempat tinggal Sultan Pontianak. Bangunannya berwarna kuning sebagai simbol kemewahan dan emas. Istana ini dibangun oleh Sultan Syarif Abdurrahman Alkadrie. Sultan di Pontianak tidak memangku jabatan pemerintahan, hanya berperan sebagai tokoh adat, berbeda dengan Sultan di Yogyakarta. </p>
+            </div>
+
+      <section class="container ">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="gambar/Tugu khatulistiwa.jpg" alt="Replika Tugu Khatulistiwa" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+              <p class="lead">Kalimantan Barat juga terletak di tengah garis khatulistiwa, sehingga memiliki fenomena unik: pada bulan Maret dan September, seseorang yang berdiri tepat di bawah matahari tidak memiliki bayangan. Hal ini ditandai dengan keberadaan Tugu Khatulistiwa di Pontianak. </p>
+            </div>
+
+    </main>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
+  <footer class="text-white text-center py-4">
     <div class="container">
-      <small>&copy; 2025 NeoEvent. All rights reserved.</small>
+      <p class="mb-1">&copy; 2025 PesonaBudaya. All rights reserved.</p>
     </div>
   </footer>
 
