@@ -1,0 +1,125 @@
+<!-- events.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museum Hakka - PesonaBudaya</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .event-section {
+      background: url('gambar/JKT48-Wonderland-scaled.webp') center center/cover no-repeat;
+      position: relative;
+      z-index: 1;
+    }
+
+    .event-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6); /* Overlay gelap */
+      z-index: 0;
+    }
+
+    .event-section .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    }
+    footer {
+      background-color: #212529; /* Warna bg-dark */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><i class="fa-solid"></i>PesonaBudaya TMII</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda </a></li>
+          <li class="nav-item"><a class="nav-link" href="anjungan-aceh.html">Anjungan Aceh </a></li>
+          <li class="nav-item"><a class="nav-link" href="anjungan-kalimantan-barat.html">Anjungan Kalimantan Barat </a></li>
+          <li class="nav-item"><a class="nav-link" href="museum-hakka.html">Museum Hakka </a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Kontak </a></li>
+          <li class="nav-item"><a class="nav-link" href="anggota.html">Anggota Kelompok</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+    <!-- Konten Gambar dan Teks -->
+    <main>
+      <section class="container">
+          <div class="row">
+              <div>
+                <h1>‎ </h1>
+                <h2 align="middle" class="fw-bold mb-3">Karya Poster</h2>
+              </div>
+          </div>
+          
+      <section class="container">
+          <div class="row">
+              <div class="col-md-6">
+                <img src="gambar/poster-abee.jpg" alt="poster abee" class="img-fluid rounded shadow">
+              </div>
+              <div class="col-md-6">
+                <h2>Poster Abee Maalik Salahudin</h2>
+              </div>
+          </div>
+
+      <section class="container">
+          <div class="row">
+              <div class="col-md-6">
+                <img src="gambar/poster-galen.png" alt="poster galen" class="img-fluid rounded shadow">
+              </div>
+              <div class="col-md-6">
+                <h2>Poster Galen Alvian</h2>
+              </div>
+          </div>  
+
+      <section class="container">
+          <div class="row">
+              <div class="col-md-6">
+                <img src="gambar/poster-haikal.jpg" alt="poster haikal" class="img-fluid rounded shadow">
+              </div>
+              <div class="col-md-6">
+                <h2>Poster Haikal Sabilah</h2>
+              </div>
+          </div>
+
+      <section class="container">
+          <div class="row">
+              <div class="col-md-6">
+                <img src="gambar/poster-vito.jpg" alt="poster vito" class="img-fluid rounded shadow">
+              </div>
+              <div class="col-md-6">
+                <h2>Poster Muhammad Alvito Qutbi</h2>
+              </div>
+          </div>     
+    </main>      
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 PesonaBudaya. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/event.js"></script>
+</body>
+</html>
