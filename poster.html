@@ -61,54 +61,103 @@
     
     <!-- Konten Gambar dan Teks -->
     <main>
-      <section class="container">
-          <div class="row">
-              <div>
-                <h1>‎ </h1>
-                <h2 align="middle" class="fw-bold mb-3">Karya Poster</h2>
-              </div>
-          </div>
-          
-      <section class="container">
-          <div class="row">
-              <div class="col-md-6">
-                <img src="gambar/poster-abee.jpg" alt="poster abee" class="img-fluid rounded shadow">
-              </div>
-              <div class="col-md-6">
-                <h2>Poster Abee Maalik Salahudin</h2>
-              </div>
-          </div>
+        <h1>‎ </h1>
+        <h1>‎ </h1>
 
-      <section class="container">
-          <div class="row">
-              <div class="col-md-6">
-                <img src="gambar/poster-galen.png" alt="poster galen" class="img-fluid rounded shadow">
-              </div>
-              <div class="col-md-6">
-                <h2>Poster Galen Alvian</h2>
-              </div>
-          </div>  
+        <section class="container my-5">
+            <h2 class="text-center mb-4 fw-bold">Poster Budaya</h2>
+            <div class="row g-4">
 
-      <section class="container">
-          <div class="row">
-              <div class="col-md-6">
-                <img src="gambar/poster-haikal.jpg" alt="poster haikal" class="img-fluid rounded shadow">
-              </div>
-              <div class="col-md-6">
-                <h2>Poster Haikal Sabilah</h2>
-              </div>
-          </div>
+                <!-- Poster 1 -->
+                <div class="col-md-3 col-sm-6">
+                <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#posterModal1">
+                    <img src="gambar/poster-abee.jpg" class="card-img-top" alt="Poster 1">
+                    <div class="card-body text-center">
+                    <h5 class="card-title">Poster Abee</h5>
+                    </div>
+                </div>
+                </div>
 
-      <section class="container">
-          <div class="row">
-              <div class="col-md-6">
-                <img src="gambar/poster-vito.jpg" alt="poster vito" class="img-fluid rounded shadow">
-              </div>
-              <div class="col-md-6">
-                <h2>Poster Muhammad Alvito Qutbi</h2>
-              </div>
-          </div>     
+                <!-- Poster 2 -->
+                <div class="col-md-3 col-sm-6">
+                <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#posterModal2">
+                    <img src="gambar/poster-galen.png" class="card-img-top" alt="Poster 2">
+                    <div class="card-body text-center">
+                    <h5 class="card-title">Poster Galen</h5>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Poster 3 -->
+                <div class="col-md-3 col-sm-6">
+                <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#posterModal3">
+                    <img src="gambar/poster-haikal.jpg" class="card-img-top" alt="Poster 3">
+                    <div class="card-body text-center">
+                    <h5 class="card-title">Poster Haikal</h5>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Poster 4 -->
+                <div class="col-md-3 col-sm-6">
+                <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#posterModal4">
+                    <img src="gambar/poster-vito.jpg" class="card-img-top" alt="Poster 4">
+                    <div class="card-body text-center">
+                    <h5 class="card-title">Poster Vito</h5>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+        <h1>‎ </h1>
     </main>      
+
+    <!-- Modal Poster 1 -->
+    <div class="modal fade" id="posterModal1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+        <div class="modal-body p-0">
+            <img src="gambar/poster-abee.jpg" class="img-fluid w-100" alt="Poster 1">
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal Poster 2 -->
+    <div class="modal fade" id="posterModal2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+        <div class="modal-body p-0">
+            <img src="gambar/poster-galen.png" class="img-fluid w-100" alt="Poster 2">
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal Poster 3 -->
+    <div class="modal fade" id="posterModal3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+        <div class="modal-body p-0">
+            <img src="gambar/poster-haikal.jpg" class="img-fluid w-100" alt="Poster 3">
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal Poster 4 -->
+    <div class="modal fade" id="posterModal4" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+        <div class="modal-body p-0">
+            <img src="gambar/poster-vito.jpg" class="img-fluid w-100" alt="Poster 4">
+        </div>
+        </div>
+    </div>
+    </div>
+
 
   <!-- Footer -->
   <footer class="text-white text-center py-4">
