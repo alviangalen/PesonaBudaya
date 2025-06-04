@@ -67,5 +67,7 @@ body > footer {
   margin-top: auto;
 }
 
-
+main {
+  margin-bottom: 50px; /* atau padding-bottom */
+}
   
