@@ -64,3 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   
+  document.addEventListener("DOMContentLoaded", function () {
+    let carousel = new bootstrap.Carousel(document.getElementById("heroCarousel"), {
+        interval: 3000, // Gambar akan berganti setiap 3 detik
+        wrap: true
+    });
+});
