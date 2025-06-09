@@ -96,39 +96,6 @@
                 </div>
               </div>
             </div>
-            <!-- Rumah Adat Card -->
-            <div class="col-md-4">
-              <div class="card shadow-sm h-100 border-0 card-hover">
-                <img src="gambar/rumah-adat-aceh.jpeg" class="card-img-top" alt="Rumah Adat Tradisional">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title fw-semibold">Rumah Adat Tradisional</h5>
-                  <p class="card-text flex-grow-1">Rumah adat Aceh disebut Rumoh Aceh, sebuah rumah panggung tradisional yang dibangun dari bahan kayu dengan atap berbentuk limas.</p>
-                  <button type="button" class="stretched-link btn btn-outline-hot mt-2" data-bs-toggle="modal" data-bs-target="#ModalPesawat">Baca Selengkapnya</button>
-                </div>
-              </div>
-            </div>
-            <!-- Kalbar Card -->
-            <div class="col-md-4">
-              <div class="card shadow-sm h-100 border-0 card-hover">
-                <img src="gambar/batik-bungong-jeumpa.jpg" class="card-img-top" alt="Pakaian Adat Aceh">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title fw-semibold">Batik Tradisional</h5>
-                  <p class="card-text flex-grow-1">Pakaian adat Aceh sangat beragam dan berbagai macam jenis. Ini menunjukkan kebesaran budaya serta pengaruh Islam yang kuat.</p>
-                  <button type="button" class="stretched-link btn btn-outline-hot mt-2" data-bs-toggle="modal" data-bs-target="#ModalPakaianAdat">Baca Selengkapnya</button>
-                </div>
-              </div>
-            </div>
-            <!-- Alat Musik Card -->
-            <div class="col-md-4">
-              <div class="card shadow-sm h-100 border-0 card-hover">
-                <img src="gambar/mie-aceh-cover.jpg" class="card-img-top" alt="Alat Musik Tradisional">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title fw-semibold">Makanan Khas</h5>
-                  <p class="card-text flex-grow-1">Aceh kaya akan alat musik tradisional yang digunakan untuk upacara adat, pertunjukan seni, dan ritual keagamaan.</p>
-                  <button type="button" class="stretched-link btn btn-outline-hot mt-2" data-bs-toggle="modal" data-bs-target="#ModalAlatMusik">Baca Selengkapnya</button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
